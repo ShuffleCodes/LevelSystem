@@ -1,5 +1,5 @@
 <meta>
-    <script src="update.lua"/>
+    <script src = "update.luac"/>
     <script src = "config.lua" type = "client" cache = "false"/>
     <script src = "c.lua" type = "client" cache = "false"/>
     <script src = "s.lua"/>
