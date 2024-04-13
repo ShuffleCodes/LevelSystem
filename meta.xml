@@ -1,0 +1,16 @@
+<meta>
+    <script src = "config.lua" type = "client" cache = "false"/>
+    <script src = "c.lua" type = "client" cache = "false"/>
+    <script src = "s.lua"/>
+
+    <file src = "bold.ttf"/>
+    <file src = "light.ttf"/>
+
+    <file src = "img/polygon_a.png"/>
+
+    <file src = "sound.mp3"/>
+
+    <export function = "getNeededExp" type = "client"/>
+    <export function = "addExp" type = "client"/>
+    <export function = "addExp" type = "server"/>
+</meta>
