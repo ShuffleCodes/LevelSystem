@@ -28,13 +28,13 @@ data.s.info = {data.s.polygon[1] + 148/zoom, data.s.polygon[2] + data.s.polygon[
 data.s.reward = {data.s.info[1], data.s.info[2] + data.s.info[4], 250/zoom, 40/zoom}
 
 
-addEventHandler("onClientRender", root, function()
+--[[addEventHandler("onClientRender", root, function()
     local leveldata = getElementData(localPlayer, "LevelSystem")
     dxDrawText(leveldata['level'].." Level", 0, sy - 200, 200, sy - 200, tocolor(255, 255, 255, data.s.fade), 0.50, data.font3, "left", "center", false, false, false, false, false)
     dxDrawText(leveldata['exp'].." Exp", 0, sy - 170, 200, sy - 170, tocolor(255, 255, 255, data.s.fade), 0.50, data.font3, "left", "center", false, false, false, false, false)
     dxDrawText(getNeededExp(localPlayer).." Needed per level", 0, sy - 140, 200, sy - 140, tocolor(255, 255, 255, data.s.fade), 0.50, data.font3, "left", "center", false, false, false, false, false)
     dxDrawText((getNeededExp(localPlayer) - leveldata['exp']).." Needed to level up", 0, sy - 110, 200, sy - 110, tocolor(255, 255, 255, data.s.fade), 0.50, data.font3, "left", "center", false, false, false, false, false)
-end)
+end)]]--
 
 render = function()
     local currentTick = getTickCount()
