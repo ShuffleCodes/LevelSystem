@@ -36,6 +36,3 @@ addExp = function(plr, count)
     triggerClientEvent(plr, "LevelSystem:AddExp", resourceRoot, count)
 end
 
-addCommandHandler("exp", function(plr, cmd, count)
-    addExp(plr, count)
-end)
